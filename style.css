@@ -51,12 +51,12 @@
     justify-content: space-between;
 }
 
-.input-box {
+.input-box, .output-box{
     display: flex;
     width: 45%;
 }
 
-.input-text {
+.input-text, .output-text {
     padding: 13px 15px;
     border-radius: 8px;
     border: 2px solid #1a73e8;
@@ -66,18 +66,10 @@
     resize: none;
 }
 
-.output-box {
-    display: flex;
-    width: 45%;
-    padding: 13px 15px;
-    border-radius: 8px;
-    font-size: 16px;
-    border: 2px solid #1a73e8;
-    overflow: auto;
-}
 
 
-@media screen and (max-width: 350px) {
+
+@media screen and (max-width: 400px) {
 
     .container {
         width: 100%;
