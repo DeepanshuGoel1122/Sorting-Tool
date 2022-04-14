@@ -2,6 +2,7 @@ console.log("SortingTool");
 
 let input_text = document.querySelector(".input-text");
 let output_box = document.querySelector(".output-box");
+let output_text = document.querySelector(".output-text");
 
 let ascending_btn = document.getElementById("ascending-btn");
 let descending_btn = document.getElementById("descending-btn");
@@ -38,12 +39,14 @@ window.addEventListener(
 
 
 function doSort() {
+   
     let text = input_text.value;
-
+    
     let split_text = text.split(/[\r?\n ,]+/);
 
     let numArr = [];
     let strArr = [];
+    let resArr = [];
 
     for (let i = 0; i < split_text.length; i++) {
         if (split_text[i].match(/^[0-9]*(?<![a-zA-Z])$/)) {
@@ -75,10 +78,13 @@ function doSort() {
     // ------------------Printing Result------------------------------------------------------------
 
     if(ascending_btn.classList.contains("active")){
-        output_box.innerHTML = numArr.join('</br>') + strArr.join('</br>');
+        resArr = numArr.concat(strArr);
+        output_text.innerHTML = resArr.join('\n');
     }
+    
     else if(descending_btn.classList.contains("active")){
-        output_box.innerHTML = numArr.reverse().join('</br>') + strArr.reverse().join('</br>');
+        resArr = numArr.concat(strArr);
+        output_text.innerHTML = resArr.reverse().join('\n');
     }
     
 }
