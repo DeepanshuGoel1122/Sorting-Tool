@@ -8,6 +8,27 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+.helpbox{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 8px 10px;
+    margin: 18px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #143240;
+    border-radius: 10px;
+    cursor: pointer;
+    clip-path: circle(10.5% at 0 0);
+    transition: .5s;
+}
+
+.helpbox:hover{
+    clip-path: circle(141.5% at 0 0);
+}
+
 .container {
     box-sizing: border-box;
     background-color: #fff;
