@@ -29,6 +29,12 @@
     clip-path: circle(141.5% at 0 0);
 }
 
+
+h1{
+    text-align: center;
+}
+
+
 .container {
     box-sizing: border-box;
     background-color: #fff;
@@ -75,6 +81,9 @@
 .input-box, .output-box{
     display: flex;
     width: 45%;
+    margin: 8px 0;;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 8px;
 }
 
 .input-text, .output-text {
@@ -85,6 +94,7 @@
     width: 100%;
     font-size: 16px;
     resize: none;
+    background-color: rgb(229, 234, 240);
 }
 
 
